@@ -1,0 +1,167 @@
+.cardPokemon {
+    position: relative;
+}
+
+.cardPokemon .btnBack {
+    z-index: 5;
+    position: absolute;
+    top: -5rem;
+    left: 2rem;
+    border: none;
+    background-color: transparent;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cardPokemon .btnBack img {
+    width: 100%;
+}
+
+.cardPk {
+    width: 80%;
+    height: 80vh;
+    margin: 10vh auto;
+    background-image: url(../IMG/4.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #000;
+    border-radius: 2.5rem;
+    position: relative;
+}
+
+.cardPk .imgTop {
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+}
+
+.cardPk .imgTop .imgPrincipal {
+    filter: drop-shadow(0 0 0.75rem crimson);
+    margin-left: 1rem;
+    width: 90%;
+}
+
+.cardPk .imgTop .othersImg {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardPk .imgTop .othersImg .imgExtras {
+    width: 30%;
+    height: 63%;
+    margin: 0 auto;
+}
+
+.cardPk .cardDetail {
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 50%;
+    border-radius: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+}
+
+.cardPk .cardDetail .nameTitle {
+    margin-top: 10rem;
+    width: 95%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cardPk .cardDetail .nameTitle .name {
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+.cardPk .cardDetail .nameTitle .starNumber { 
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+}
+
+.cardPk .cardDetail .types {
+    padding: 0;
+    margin: 1trm auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 75%;
+}
+
+
+.cardPk .cardDetail .types .type {
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    filter: brightness(1.2);
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 576px) {
+    .cardPk .imgTop .imgPrincipal {
+         margin-left: 5rem;
+        width: 75%;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+    .cardPk {
+        max-width: 500px;
+    }
+
+    .cardPk .imgTop .imgPrincipal {
+        margin-left: 8rem;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .cardPokemon .btnBack {
+        top: 2rem;
+    }
+
+    .cardPk {
+        /* width: 80%;
+        height: 90vh; */
+        max-width: 500px;
+        height: 95vh;
+        margin: 2.5vh auto;
+    }
+
+    .cardPk .imgTop .imgPrincipal {
+        margin-left: 8.5rem;
+        width: 50%;
+   }
+
+   .cardPk .imgTop .othersImg .imgExtras {
+    height: 100%;
+   }
+
+    
+}
